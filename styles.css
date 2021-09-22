@@ -82,6 +82,11 @@ li {
     margin-bottom: 3em;
 }
 
+#top-nav ul li a {
+    text-decoration: none;
+    color: var(--primary-font-color);
+}
+
 /* left nav bar (hidden in mobile view, displayed in desktop) */
 
 #left-nav {
