@@ -13,7 +13,7 @@ html, body {
 }
 
 #container {
-    padding: 4em 1.25em;
+    padding: 1.25em;
     background-color: black;
 }
 
@@ -43,7 +43,7 @@ li {
 
 .section {
     width: 60%;
-    margin: 0 auto 4vh auto;
+    margin: 0 auto 4.5vh auto;
 }
 
 .column {
@@ -120,6 +120,7 @@ li {
 
 #facade-text > * {
     text-align: center;
+    margin-bottom: 1.25em;
 }
 
 .hidden {
@@ -252,10 +253,6 @@ li {
 
 /* gallery */ 
 
-.gallery-imgs {
-    height: 90em;
-}
-
 .gallery-imgs img {
     margin-bottom: 0.3em;
 }
@@ -306,6 +303,10 @@ li {
 /* media queries */ 
 
 @media (min-width: 1000px) {
+    #container {
+        padding: 4em 1.25em;
+    }
+
     /* toggle nav bar for desktop & mobile */
     #left-nav {
         display: block;
@@ -348,5 +349,7 @@ li {
 
     .gallery-imgs {
         width: 48.5%;
+        min-height: 60em;
+        max-height: 85em;
     }
 }
