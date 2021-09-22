@@ -9,10 +9,11 @@
 
 html, body {
     font-family: sans-serif;
+    scroll-behavior: smooth;
 }
 
 #container {
-    padding: 1.25em;
+    padding: 4em 1.25em;
     background-color: black;
 }
 
@@ -41,7 +42,7 @@ li {
 }
 
 .section {
-    width: 65%;
+    width: 60%;
     margin: 0 auto 4vh auto;
 }
 
@@ -56,6 +57,10 @@ li {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.btn {
+    cursor: pointer;
 }
 
 .lg-btn {
@@ -73,9 +78,41 @@ li {
 
 /*header section*/
 
-#navigation {
+#top-nav {
     margin-bottom: 3em;
 }
+
+/* left nav bar (hidden in mobile view, displayed in desktop) */
+
+#left-nav {
+    width: 5em;
+    background-color: #3a3a3a;
+    height: 100vh;
+    position: fixed;
+    display: none;
+    margin-top: 5em;
+}
+
+#left-nav-elements li {
+    padding: 0.7em 0;
+    font-size: 13px;
+    
+}
+
+#left-nav-elements li a {
+    text-decoration: none;
+    color: white; ;
+}
+
+#left-nav-elements li i {
+    font-size: 25px;
+    padding: 0.5em 0;
+}
+
+.selected {
+    background-color: black;
+}
+
 
 /*facade section*/
 
@@ -263,6 +300,15 @@ li {
 /* media queries */ 
 
 @media (min-width: 1000px) {
+    /* toggle nav bar for desktop & mobile */
+    #left-nav {
+        display: block;
+    }
+
+    #top-nav {
+        display: none;
+    }
+
     /* facade section */
     #facade-text h1 {
         flex-direction: row;
