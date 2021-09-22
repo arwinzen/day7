@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>John Doe</title>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="container">
+            <!--navigation bar-->
+            <header id="navigation">
+                <ul class="row">
+                    <li>HOME</li>
+                    <li>ABOUT</li>
+                    <li>PHOTOS</li>
+                    <li>CONTACT</li>
+                </ul>
+            </header>
+
+            <!--Name and portrait of John Doe-->
+            <div id="facade-section" class="section">
+                <div id="facade-text">
+                    <h1 class="column">
+                        <span class="hidden">I'm </span>
+                        <span>John</span>
+                        <span>Doe.</span>
+                    </h1>
+                    <p>Photographer and Web Designer</p>
+                </div>
+                <img src="images/man_smoke.jpg" alt="">
+            </div>
+
+            <div id="about-me-wrapper">
+                <!--Introductory essay-->
+                <section id="intro-section" class="section">
+                    <h2 class="main-section-header">My Name</h2>
+                    <p>Some text about me. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus distinctio iste id libero odit! Eaque blanditiis cum dolor voluptatem? Aliquam ullam suscipit saepe facilis? Animi minus similique minima, omnis tenetur velit in! Est laborum eligendi, asperiores nesciunt aperiam sed necessitatibus autem laudantium quae, animi iure vero vel perferendis dolorum maiores perspiciatis corrupti? Iure culpa facilis modi incidunt suscipit animi aperiam id nostrum esse eaque asperiores mollitia dolor, deserunt ipsam quibusdam facere eum cumque velit soluta consectetur odit quas molestias delectus.</p>
+                </section>
+
+                <!--infograph on skills & accomplishments-->
+                <div id="skill-section" class="section">
+                    <h3>My Skills</h3>
+
+                    <p>Photography</p>
+                    <div class="progress-bar">
+                        <div id="skill-1-progress"></div>
+                    </div>
+
+                    <p>Web Design</p>
+                    <div class="progress-bar">
+                        <div id="skill-2-progress"></div>
+                    </div>
+
+                    <p>Photoshop</p>
+                    <div class="progress-bar">
+                        <div id="skill-3-progress"></div>
+                    </div>
+
+                    <!--List is vertical in mobile and horizontal on desktop-->
+                    <div id="accomplishment-list" class="list">
+                        <ul class="column">
+                            <li>
+                                <span class="figures">11+</span>
+                                <span>Partners</span>
+                            </li>
+                            <li>
+                                <span class="figures">55+</span>
+                                <span>Projects Done</span>
+                            </li>
+                            <li>
+                                <span class="figures">89+</span>
+                                <span>Happy Clients</span>
+                            </li>
+                            <li>
+                                <span class="figures">150+</span>
+                                <span>Meetings</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div id="resume-btn" class="lg-btn"><i class="fas fa-download"></i>Download Resume</div>
+                </div>
+
+                <!--Two different packages for basic vs pro-->
+                <!--Each package consists of a vertical list-->
+                <!--Packages are displayed vertically in mobile, horizontally on desktop-->
+                <div id="pricing-section" class="section">
+                    <h3>My Price</h3>
+                    <div id="package-wrapper" class="wrapper column">
+                        <div id="basic-package" class="package column">
+                            <div class="package-header">
+                                <span>Basic</span>
+                            </div>
+                            <ul class="column">
+                                <li>Web Design</li>
+                                <li>Photography</li>
+                                <li>5GB Storage</li>
+                                <li>Mail Support</li>
+                                <li class="package-price column">
+                                    <span class="figures">$ 10</span>
+                                    <span>per month</span>
+                                </li>
+                                <div class="btn-wrapper row">
+                                    <span id="sign-up-btn" class="med-btn">Sign Up</span>
+                                </div>
+                            </ul>
+                        </div>
+
+                        <div id="pro-package" class="package column">
+                            <div class="package-header">
+                                <span>Pro</span>
+                            </div>
+                            <ul>
+                                <li>Web Design</li>
+                                <li>Photography</li>
+                                <li>50GB Storage</li>
+                                <li>Endless Support</li>
+                                <li class="package-price column">
+                                    <span class="figures">$ 25</span>
+                                    <span>per month</span>
+                                </li>
+                            </ul>
+                            <div class="btn-wrapper row">
+                                <span id="sign-up-btn" class="med-btn">Sign Up</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Centered in mobile layout, starts on the left on desktop-->
+                <section id="feedback-section" class="section">
+                    <div class="testimonial row">
+                        <img class="testimonial-img" src="images/bandmember.jpg" alt="">
+                        <div class="testimonial-txt">
+                            <p>Chris Fox.   CEO at Mighty Schools.</p>
+                            <p>John Doe saved us from a website disaster.</p>
+                        </div>
+                    </div>
+
+                    <div class="testimonial row">
+                        <img class="testimonial-img" src="images/avatar_g2.jpg" alt="">
+                        <div class="testimonial-txt">
+                            <p>Rebecca Flex.    CEO at Company.</p>
+                            <p>No one is better than John Doe.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div id="photos-section" class="section">
+                <h2 class="main-section-header">My Photos</h2>
+                <!--displayed as a column of imgs on mobile, and two columns on desktop-->
+                <div id="gallery" class="column">
+                    <div id="gallery-1st-col" class="gallery-imgs">
+                        <img src="images/wedding.jpg" alt="">
+                        <img src="images/rocks.jpg" alt="">
+                        <img src="images/sailboat.jpg" alt="">
+                    </div>
+                    <div id="gallery-2nd-col" class="gallery-imgs">
+                        <img src="images/underwater.jpg" alt="">
+                        <img src="images/chef.jpg" alt="">
+                        <img src="images/wedding.jpg" alt="">
+                        <img src="images/p6.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div id="contact-section" class="section">
+                <!--centered on mobile, to the left on desktop-->
+                <div id="contact-details">
+                    <h2 class="main-section-header">Contact Me</h2>
+                    <p><i class="fas fa-map-marker-alt"></i>Chicago, US</p>
+                    <p><i class="fas fa-phone-alt"></i>Phone: +00 151515</p>
+                    <p><i class="fas fa-envelope"></i>Email: mail@mail.com</p>
+                </div>
+
+                <p>Let's get in touch. Send me a message:</p>
+
+                <!--each input box takes up the width of the section on desktop-->
+                <div id="contact-form">
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <input type="text" placeholder="Subject">
+                    <input type="text" placeholder="Message">
+                    <div id="send-btn" class="lg-btn"><i class="fas fa-paper-plane"></i>SEND MESSAGE</div>
+                </div>
+            </div>
+
+            <div id="footer-section" class="section">
+                <div id="social-media-links">
+                    <i class="fab fa-facebook-square"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-snapchat-square"></i>
+                    <i class="fab fa-pinterest"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                </div>
+                <p class="emphasis">Powered by <a href="#" class="emphasis">w3.css</a></p>
+            </div>
+
+        </div>
+    </body>
+</html>
