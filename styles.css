@@ -96,7 +96,10 @@ li {
 #left-nav-elements li {
     padding: 0.7em 0;
     font-size: 13px;
-    
+}
+
+#left-nav-elements li:hover {
+    background-color: #919191;
 }
 
 #left-nav-elements li a {
@@ -112,7 +115,6 @@ li {
 .selected {
     background-color: black;
 }
-
 
 /*facade section*/
 
