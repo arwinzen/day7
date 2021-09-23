@@ -101,18 +101,19 @@ li {
 #left-nav-elements li {
     padding: 0.7em 0;
     font-size: 13px;
+    color: white;
 }
 
-#left-nav-elements li:hover {
+#left-nav-elements a:hover {
     background-color: #919191;
 }
 
-#left-nav-elements li a {
+#left-nav-elements a {
     text-decoration: none;
     color: white; ;
 }
 
-#left-nav-elements li i {
+#left-nav-elements a li i {
     font-size: 25px;
     padding: 0.5em 0;
 }

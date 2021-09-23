@@ -1,6 +1,6 @@
 // console.log(document.querySelectorAll("#left-nav-elements li").length);
 // console.log(leftNavElements.length);
-let leftNavElements = (document.querySelectorAll("#left-nav-elements li"));
+let leftNavElements = (document.querySelectorAll("#left-nav-elements a"));
 
 // add an on-click event listener to each li item in left navbar
 for (let i = 0; i < leftNavElements.length; i++) {
